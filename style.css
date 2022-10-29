@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/*------------ HEADER -----------------*/
+/* MENU DROPDONW */
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header {
+  padding: 16px 0 0;
+  border-bottom: 1px solid #ccc;
+}
+
+input {
+  padding: 4px;
+  border-radius: 4px;
+}
+button {
+  background-color: darkgoldenrod;
+  color: #fff;
+  padding: 4px;
+  border-radius: 4px;
+}
+.submenu {
+  display: none;
+  position: absolute; /*elemento que o faz destacar na frente*/
+  left: 0; /*faz com que o menu inicie a sua aparição no inicio*/
+  width: 250px;
+  top: 100%; /*difine a altura do inicio do menu na sua aparição*/
+  border: 1px solid darkgoldenrod;
+}
+.menu > li {
+  float: left;
+  list-style: none;
+  padding: 16px;
+  border-top: 4px solid transparent;
+  position: relative; /*contem o elemento dentro do seu espaço*/
+}
+/*essa DIV foi criada para dar uma distancia no BOTTOM do HEADER*/
+.clear {
+  clear: both;
+}
+/*efeito criado para quando o mouse passar o menu aparecer*/
+.menu li:hover .submenu {
+  display: block;
+}
+.menu li:hover {
+  color: darkgoldenrod;
+  border-color: darkgoldenrod;
+}
+.submenu li {
+  display: block;
+  padding: 8px;
+}
+
+/*----------------- FIM DO HEADER ---------------------*/
